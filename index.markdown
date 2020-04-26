@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+<p>one paragraph</p>
