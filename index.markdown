@@ -5,20 +5,50 @@
 layout: default
 ---
 
-<div> 
-   <header class="masthead">
-        <div class="container">
-            <div class="row h-100 align-items-center justify-content-center text-center" style="margin-top: 30%;">
-                <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase text-white font-weight-bold">Co-Libre Radio</h1>
+<div>
+    <header class="masthead">
+        <div class="row" style="margin-right:1%">
+            <div class="col-md-8"  style="margin-top:5%">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6">
+                        <div class="row justify-content-center">
+                            <h1 class="text-uppercase text-white font-weight-bold" style="text-align: center;">Co-Libre Radio</h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 font-weight-light mb-5">Colectividad libre from Athens</p>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6">
+                        <div class="row justify-content-center">
+                            <p class="text-white-75 font-weight-light mb-5" style="text-align: center;">Colectividad libre from Athens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="background-color: white;margin-top:5%;">
+                <div class="row">
+                    <main class="page-content" aria-label="Content">
+                        <div class="wrapper">
+                            <div class="home">
+                                <h2 class="text-black font-weight-bold" style="text-align: center;">Posts</h2>
+                                <ul class="post-list">
+                                    <li><span class="post-meta">Apr 25, 2020</span>
+                                        <h3>
+                                            <a class="post-link"
+                                                href="/jekyll/update/2020/04/25/welcome-to-jekyll.html">
+                                                Welcome to Jekyll!
+                                            </a>
+                                        </h3>
+                                    </li>
+                                </ul>
+                                <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+                            </div>
+                        </div>
+                    </main>
                 </div>
             </div>
         </div>
     </header>
-    <section class="page-section bg-primary" id="chat">
+        <section class="page-section bg-primary" id="chat">
         <div class="container">
             <div class="row justify-content-center">
                 <h3 class="text-white font-weight-bold" style="margin-bottom: 2%;">Chat Room</h3>
