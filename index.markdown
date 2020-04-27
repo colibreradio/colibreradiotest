@@ -20,8 +20,7 @@ layout: default
                 <div class="row justify-content-md-center">
                     <div class="col-md-6">
                         <div class="row justify-content-center">
-                            <p class="text-white-75 font-weight-light mb-5" style="text-align: center">Colectividad
-                                libre from Athens</p>
+                            <p class="text-white-75 font-weight-light mb-5" style="text-align: center">{{site.data.site.maindesc}}</p>
                         </div>
                     </div>
                 </div>

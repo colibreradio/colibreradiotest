@@ -3,3 +3,15 @@ name: github
 repo: colibreradio/colibreradiotest
 
 media_folder: "images/uploads"
+
+collections:
+  - name: "website-settings"
+    label: "Website Settings"
+    files:
+      - label: "Website settings"
+        name: "site"
+        file: "_data/site.yml"
+        fields:
+         - label: "main desc"
+           name: "maindesc"
+           width: "string"
