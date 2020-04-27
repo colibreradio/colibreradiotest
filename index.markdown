@@ -8,8 +8,18 @@ layout: default
 <div>
     <header class="masthead">
         <div class="row" style="margin-right:2%;margin-left:2%;">
-            <div class="col-md-8" style="margin-top:20%">
-                <div class="row justify-content-md-center">
+            <div class="col-md-8">
+                <div class="row justify-content-md-right" style="margin-top:5%">
+                    <p class="marquee text-white-75 font-weight-light mb-5">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}
+                                23:00</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </p>
+                    <p class="marquee marquee2 text-white-75 font-weight-light mb-5">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}
+                        </u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </p>
+                </div>
+                <div class="row justify-content-md-center" style="margin-top:20%">
                     <div class="col-md-6">
                         <div class="row justify-content-center">
                             <h1 class="text-uppercase text-white font-weight-bold" style="text-align: center">
@@ -20,35 +30,38 @@ layout: default
                 <div class="row justify-content-md-center">
                     <div class="col-md-6">
                         <div class="row justify-content-center">
-                            <p class="text-white-75 font-weight-light mb-5" style="text-align: center">{{site.data.site.maindesc}}</p>
+                            <p class="text-white-75 font-weight-light mb-5" style="text-align: center">
+                                {{site.data.site.maindesc}}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 shadow mb-5 bg-white" style="background-color: white;margin-top:2%;overflow: scroll;height: 85vh !important;">
+            <div class="col-md-4 shadow mb-5 bg-white"
+                style="background-color: white;margin-top:2%;overflow: scroll;height: 85vh !important;">
                 <div class="container my-4">
-                    <h2 class="text-black font-weight-bold" style="text-align: center;color: #c53025;margin-bottom: 5%">Latest Posts</h2>
-<ul class="list-group list-group-flush">
-  {% for post in site.posts %}
-    <li class="list-group-item" style="margin-top:2%;margin-bottom:2%">
-      <h4>{{ post.title }}</h4>
-      <span class="post-meta">{{ post.date | date_to_string }}</span>
-      <span class="post-meta">{{ post.author }}</span>
-      <p style="margin-top:5%;">{{ post.excerpt }}</p>
-      <a href="{{ post.url }}" target="_blank">Read More...</a>
-    </li>
-  {% endfor %}
-</ul>        
+                    <h2 class="text-black font-weight-bold" style="text-align: center;color: #c53025;margin-bottom: 5%">
+                        Latest Posts</h2>
+                    <ul class="list-group list-group-flush">
+                        {% for post in site.posts %}
+                        <li class="list-group-item" style="margin-top:2%;margin-bottom:2%">
+                            <h4>{{ post.title }}</h4>
+                            <span class="post-meta">{{ post.date | date_to_string }}</span>
+                            <span class="post-meta">{{ post.author }}</span>
+                            <p style="margin-top:5%;">{{ post.excerpt }}</p>
+                            <a href="{{ post.url }}" target="_blank">Read More...</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
-        <section class="page-section bg-primary" id="chat">
+    <section class="page-section bg-primary" id="chat">
         <div class="container">
             <div class="row justify-content-center">
                 <h3 class="text-white font-weight-bold" style="margin-bottom: 2%;">Chat Room</h3>
-                    <iframe src="https://minnit.chat/CoLibreChat?embed&nickname=" class="shadow mb-5 bg-white"
-                        style="border:0;width:90%;height:500px;" allowTransparency="true"></iframe>
+                <iframe src="https://minnit.chat/CoLibreChat?embed&nickname=" class="shadow mb-5 bg-white"
+                    style="border:0;width:90%;height:500px;" allowTransparency="true"></iframe>
             </div>
         </div>
     </section>

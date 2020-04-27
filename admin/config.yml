@@ -12,6 +12,9 @@ collections:
         name: "site"
         file: "_data/site.yml"
         fields:
-         - label: "main desc"
+         - label: "Main Description"
            name: "maindesc"
+           width: "string"
+         - label: "Banner"
+           name: "banner"
            width: "string"
