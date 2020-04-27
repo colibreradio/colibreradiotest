@@ -7,43 +7,71 @@ layout: default
 
 <div>
     <header class="masthead">
-        <div class="row" style="margin-right:1%">
-            <div class="col-md-8"  style="margin-top:5%">
+        <div class="row" style="margin-right:2%;">
+            <div class="col-md-8" style="margin-top:20%">
                 <div class="row justify-content-md-center">
                     <div class="col-md-6">
                         <div class="row justify-content-center">
-                            <h1 class="text-uppercase text-white font-weight-bold" style="text-align: center;">Co-Libre Radio</h1>
+                            <h1 class="text-uppercase text-white font-weight-bold" style="text-align: center">
+                                Co-Libre Radio</h1>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-md-6">
                         <div class="row justify-content-center">
-                            <p class="text-white-75 font-weight-light mb-5" style="text-align: center;">Colectividad libre from Athens</p>
+                            <p class="text-white-75 font-weight-light mb-5" style="text-align: center">Colectividad
+                                libre from Athens</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" style="background-color: white;margin-top:5%;">
-                <div class="row">
-                    <main class="page-content" aria-label="Content">
-                        <div class="wrapper">
-                            <div class="home">
-                                <h2 class="text-black font-weight-bold" style="text-align: center;">Posts</h2>
-                                <ul class="post-list">
-                                    <li><span class="post-meta">Apr 25, 2020</span>
-                                        <h3>
-                                            <a class="post-link"
-                                                href="/jekyll/update/2020/04/25/welcome-to-jekyll.html">
-                                                Welcome to Jekyll!
-                                            </a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                                <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-                            </div>
-                        </div>
-                    </main>
+            <div class="col-md-4" style="background-color: white;margin-top:2%;overflow: scroll;height: 85vh !important;">
+                <div class="container my-4">
+                    <h2 class="text-black font-weight-bold" style="text-align: center;color: #c53025;">Latest Posts</h2>
+                    <ul class="post-list">
+                        <li><span class="post-meta">Apr 25, 2020</span>
+                            <h3>
+                                <a class="post-link" href="/jekyll/update/2020/04/25/welcome-to-jekyll.html">
+                                    Welcome to Jekyll!
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                    <p class="rss-subscribe">vevwevwevewv
+                    wevfewfewfwe vevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwe vevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwevevwevwevewv
+                    wevfewfewfwe
+                     <a href="/feed.xml">via RSS</a></p>
                 </div>
             </div>
         </div>
