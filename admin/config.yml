@@ -18,3 +18,4 @@ collections:
          - label: "Banner"
            name: "banner"
            width: "string"
+           required: false
