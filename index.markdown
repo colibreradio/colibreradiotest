@@ -7,7 +7,7 @@ layout: default
 
 <div>
     <header class="masthead">
-        <div class="row" style="margin-right:2%;">
+        <div class="row" style="margin-right:2%;margin-left:2%;">
             <div class="col-md-8" style="margin-top:20%">
                 <div class="row justify-content-md-center">
                     <div class="col-md-6">
@@ -26,7 +26,7 @@ layout: default
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" style="background-color: white;margin-top:2%;overflow: scroll;height: 85vh !important;">
+            <div class="col-md-4 shadow mb-5 bg-white" style="background-color: white;margin-top:2%;overflow: scroll;height: 85vh !important;">
                 <div class="container my-4">
                     <h2 class="text-black font-weight-bold" style="text-align: center;color: #c53025;">Latest Posts</h2>
                     <ul class="post-list">
