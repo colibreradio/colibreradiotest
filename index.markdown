@@ -29,13 +29,13 @@ layout: default
             <div class="col-md-4 shadow mb-5 bg-white" style="background-color: white;margin-top:2%;overflow: scroll;height: 85vh !important;">
                 <div class="container my-4">
                     <h2 class="text-black font-weight-bold" style="text-align: center;color: #c53025;margin-bottom: 5%">Latest Posts</h2>
-<ul>
+<ul class="list-group list-group-flush">
   {% for post in site.posts %}
-    <li style="margin-top:5%;margin-bottom:5%">
+    <li class="list-group-item" style="margin-top:2%;margin-bottom:2%">
       <h4>{{ post.title }}</h4>
       <span class="post-meta">{{ post.date | date_to_string }}</span>
-      <span class="post-meta strong">{{ post.author }}</span>
-      {{ post.excerpt }}
+      <span class="post-meta">{{ post.author }}</span>
+      <p style="margin-top:5%;">{{ post.excerpt }}</p>
       <a href="{{ post.url }}" target="_blank">Read More...</a>
     </li>
   {% endfor %}
