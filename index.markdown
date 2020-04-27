@@ -28,50 +28,18 @@ layout: default
             </div>
             <div class="col-md-4 shadow mb-5 bg-white" style="background-color: white;margin-top:2%;overflow: scroll;height: 85vh !important;">
                 <div class="container my-4">
-                    <h2 class="text-black font-weight-bold" style="text-align: center;color: #c53025;">Latest Posts</h2>
-                    <ul class="post-list">
-                        <li><span class="post-meta">Apr 25, 2020</span>
-                            <h3>
-                                <a class="post-link" href="/jekyll/update/2020/04/25/welcome-to-jekyll.html">
-                                    Welcome to Jekyll!
-                                </a>
-                            </h3>
-                        </li>
-                    </ul>
-                    <p class="rss-subscribe">vevwevwevewv
-                    wevfewfewfwe vevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwe vevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwevevwevwevewv
-                    wevfewfewfwe
-                     <a href="/feed.xml">via RSS</a></p>
+                    <h2 class="text-black font-weight-bold" style="text-align: center;color: #c53025;margin-bottom: 5%">Latest Posts</h2>
+<ul>
+  {% for post in site.posts %}
+    <li style="margin-top:5%;margin-bottom:5%">
+      <h4>{{ post.title }}</h4>
+      <span class="post-meta">{{ post.date | date_to_string }}</span>
+      <span class="post-meta strong">{{ post.author }}</span>
+      {{ post.excerpt }}
+      <a href="{{ post.url }}" target="_blank">Read More...</a>
+    </li>
+  {% endfor %}
+</ul>        
                 </div>
             </div>
         </div>
