@@ -43,7 +43,8 @@ layout: default
                         {% for post in site.posts %}
                         <li class="list-group-item" style="margin-top:2%;margin-bottom:2%">
                             <h4 class="font-weight-bold">{{ post.title }}</h4>
-                            <span class="post-meta">{{ post.date | date_to_string }}</span>
+                            <span class="post-meta">{{ post.date | date: "%-d %B %Y %R" }}</span>
+                            <span class="post-meta font-weight-bold" style="color: #c53025;">from</span>
                             <span class="post-meta">{{ post.author }}</span>
                             <p style="margin-top:5%;">{{ post.excerpt }}</p>
                             <a href="{{ post.url }}" target="_blank">Read More...</a>

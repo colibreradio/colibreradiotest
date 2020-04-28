@@ -10206,5 +10206,17 @@ header.masthead h1 {
 }
 
 a.dropdown-toggle:hover + ul.dropdown-menu,
-ul.dropdown-menu:hover { display: block; } 
-.dropdown-menu { margin-top: 0; } 
+ul.dropdown-menu:hover { 
+  display: block; 
+}
+
+.dropdown-menu { 
+  margin-top: 0; 
+  background-color: #dee2e6;
+  min-width: 5rem;
+  color: black;
+} 
+
+.dropdown-menu a:hover {
+  color: #c53025;
+}
