@@ -94,7 +94,10 @@ layout: default
                     {% endif %}
                 {% endfor %}
                 </div>
-            </li>
+                <div class="row justify-content-right" style="margin-top:2%;float: right;">
+                <a href="/{{ category[0] | camelcase }}.html" target="_blank">See All Posts</a>
+                </div>
+            </li>            
         {% endfor %}
         </ul>
     </div>
