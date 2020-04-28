@@ -6,32 +6,40 @@ layout: default
 ---
 
 <div> 
-   <header class="masthead">
-        <div class="container">
-            <div class="row h-100 align-items-center justify-content-center text-center" style="margin-top: 30%;">
-                <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase text-white font-weight-bold">Co-Libre Radio</h1>
-                </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <main class="page-content" aria-label="Content">
-  <div class="wrapper">
-    <div class="home">
-       <h2 class="post-list-heading">Posts</h2>
-       <ul class="post-list">
-           <li><span class="post-meta">Apr 25, 2020</span>
-          <h3>
-          <a class="post-link" href="/jekyll/update/2020/04/25/welcome-to-jekyll.html">
-            Welcome to Jekyll!
-          </a>
-        </h3></li></ul>
-        <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-    </div>
-  </div>
-</main>
-                </div>
-            </div>
+<section class="page-section" id="posts">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3 class="font-weight-bold" style="margin-bottom: 2%;">Posts</h3>
         </div>
-    </header>
+        <ul class="list-group list-group-flush">
+        {% for category in site.categories %}
+        {% if category[0] == 'Music' %}
+            <li class="list-group-item" style="margin-bottom:2%">
+                <div class="row justify-content-left">
+                    <h4 style="text-align: center;color: #c53025;">{{ category[0] | camelcase }}</h4>
+                </div>
+                <div class="row" style="margin-bottom 2%">
+                {% assign pages_list = category[1] %}
+                {% for post in pages_list %}
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{ post.thumbnail }}"
+                                alt="No post image..">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ post.title }}</h5>
+                                <p class="card-text">{{ post.excerpt }}</p>
+                                <a href="{{ post.url }}" class="btn btn-primary" target="_blank">Read More..</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+</section>
 </div>
 
 

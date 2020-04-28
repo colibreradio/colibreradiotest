@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2020-04-25 17:06:51 +0300
-categories: jekyll update
+categories: News
 author: 'Author Name'
 ---
 
