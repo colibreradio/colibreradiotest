@@ -20,17 +20,7 @@ layout: category
                 <div class="row" style="margin-bottom 2%">
                 {% assign pages_list = category[1] %}
                 {% for post in pages_list %}
-                    <div class="col-sm-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="{{ post.thumbnail }}"
-                                alt="No post image..">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ post.title }}</h5>
-                                <p class="card-text">{{ post.excerpt }}</p>
-                                <a href="{{ post.url }}" class="btn btn-primary" target="_blank">Read More..</a>
-                            </div>
-                        </div>
-                    </div>
+                   {% include tile.html %}
                 {% endfor %}
                 </div>
             </li>

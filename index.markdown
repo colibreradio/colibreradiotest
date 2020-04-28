@@ -80,14 +80,18 @@ layout: default
                 {% for post in pages_list %}
                     {% assign count = count | plus:1 %}
                     <div class="col-sm-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 18rem;height: 32rem !important;">
                             <img class="card-img-top" src="{{ post.thumbnail }}"
                                 alt="No post image..">
                             <div class="card-body">
+                                <div class="row" style="max-height: 14rem;overflow:hidden;">
                                 <h5 class="card-title">{{ post.title }}</h5>
                                 <p class="card-text">{{ post.excerpt }}</p>
-                                <a href="{{ post.url }}" class="btn btn-primary" target="_blank">Read More..</a>
+                                </div>
                             </div>
+                            <div class="row align-items-center d-flex justify-content-center" style="margin-bottom:8%">
+                                <a href="{{ post.url }}" class="btn btn-primary" target="_blank">Read More..</a>
+                             </div>
                         </div>
                     </div>
                     {% if count == 4 %}{% break %}
