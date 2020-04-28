@@ -10204,3 +10204,7 @@ header.masthead h1 {
     transform: translate(-100%, 0);
   }
 }
+
+a.dropdown-toggle:hover + ul.dropdown-menu,
+ul.dropdown-menu:hover { display: block; } 
+.dropdown-menu { margin-top: 0; } 
