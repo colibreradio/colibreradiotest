@@ -2,7 +2,7 @@
 layout: post
 title:  "My First Post"
 date:   2020-04-27 17:06:51 +0300
-categories: jekyll update
+categories: Music
 author: 'Myrto'
 ---
 

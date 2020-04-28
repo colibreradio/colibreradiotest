@@ -35,14 +35,14 @@ layout: default
                 </div>
             </div>
             <div class="col-md-4 shadow mb-5 bg-white"
-                style="background-color: white;margin-top:2%;overflow: scroll;height: 85vh !important;">
+                style="background-color: white;margin-top:15%;overflow: scroll;height: 60vh !important;">
                 <div class="container my-4">
                     <h2 class="text-black font-weight-bold" style="text-align: center;color: #c53025;margin-bottom: 5%">
                         Latest Posts</h2>
                     <ul class="list-group list-group-flush">
                         {% for post in site.posts %}
                         <li class="list-group-item" style="margin-top:2%;margin-bottom:2%">
-                            <h4>{{ post.title }}</h4>
+                            <h4 class="font-weight-bold">{{ post.title }}</h4>
                             <span class="post-meta">{{ post.date | date_to_string }}</span>
                             <span class="post-meta">{{ post.author }}</span>
                             <p style="margin-top:5%;">{{ post.excerpt }}</p>
@@ -63,4 +63,40 @@ layout: default
             </div>
         </div>
     </section>
+<section class="page-section" id="posts">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3 class="font-weight-bold" style="margin-bottom: 2%;">Posts</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+        {% for category in site.categories %}
+            <li class="list-group-item" style="margin-bottom:2%">
+                <div class="row justify-content-left">
+                    <h4 style="text-align: center;color: #c53025;">{{ category[0] | camelcase }}</h4>
+                </div>
+                <div class="row" style="margin-bottom 2%">
+                {% assign pages_list = category[1] %}
+                {% assign count = 0 %}
+                {% for post in pages_list %}
+                    {% assign count = count | plus:1 %}
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{ post.thumbnail }}"
+                                alt="No post image..">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ post.title }}</h5>
+                                <p class="card-text">{{ post.excerpt }}</p>
+                                <a href="{{ post.url }}" class="btn btn-primary" target="_blank">Read More..</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% if count == 4 %}{% break %}
+                    {% endif %}
+                {% endfor %}
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
 </div>

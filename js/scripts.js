@@ -60,4 +60,13 @@
     }
   });
 
+
 })(jQuery); // End of use strict
+
+var i;
+var divs = document.getElementById('#postpreviewtext');
+for(i=0;i<divs.length;i++) {
+  if(divs[i].className == 'card-text') {
+    divs[i].innerHTML = divs[i].innerHTML.substring(0,20);
+  }
+}
