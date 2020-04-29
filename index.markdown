@@ -127,7 +127,7 @@ layout: default
                             </div>
                         </div>
                     </div>
-                    {% if count == 4 %}{% break %}
+                    {% if count == 3 %}{% break %}
                     {% endif %}
                     {% endfor %}
                 </div>
