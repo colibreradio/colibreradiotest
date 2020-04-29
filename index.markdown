@@ -71,7 +71,7 @@ layout: default
         </div>
         <ul class="list-group list-group-flush">
         {% for category in site.categories %}
-            <li class="list-group-item" style="margin-bottom:2%">
+            <li class="list-group-item" style="margin-bottom:2%;padding-top:4%;" id="{{ category[0] | camelcase }}">
                 <div class="row justify-content-left">
                     <h4 style="text-align: center;color: #c53025;">{{ category[0] | camelcase }}</h4>
                 </div>
