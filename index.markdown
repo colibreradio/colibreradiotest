@@ -53,7 +53,7 @@ layout: default
                     </ul>
                 </div>
             </div>-->
-            <div id="carouselExampleIndicators" class="col-md-4 shadow mb-5 carousel slide" data-ride="carousel"
+            <div id="carouselExampleIndicators" class="col-md-4 carousel slide shadow-lg p-0 mb-5" data-ride="carousel"
                 style="background-color:black;margin-top:10%;overflow: hidden;width: 100%important;height: 65vh !important;">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
