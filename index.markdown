@@ -87,7 +87,6 @@ layout: default
                 </a>
             </div>
         </div>
-</div>
 </header>
 <section class="page-section bg-primary" id="chat">
     <div class="container">
