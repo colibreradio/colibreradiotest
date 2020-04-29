@@ -68,9 +68,9 @@ layout: default
                         <img class="d-block w-100"
                             style="object-fit: none; object-position: center;width: 100%;height: 65vh; margin-bottom: 1rem;"
                             src="{{ post.thumbnail }}">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><a href="{{ post.url }}" target="_blank"
-                                    style="background-color: #c53025;color:white;">{{ post.title }}</a></h5>
+                        <div class="carousel-caption" style="margin-bottom:2%">
+                            <a href="{{ post.url }}" target="_blank"
+                                    style="background-color: #c53025;color:white;">{{ post.title }}</a>
                         </div>
                     </div>
                     {% if count == 3 %}{% break %}
