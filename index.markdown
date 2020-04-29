@@ -7,7 +7,7 @@ layout: default
 
 <div>
     <header class="masthead">
-        <div class="row" style="margin-right:2%;margin-left:2%;">
+        <div class="row" style="margin-right:1%;margin-left:1%;">
             <div class="col-md-8">
                 <div class="row justify-content-md-right" style="margin-top:5%">
                     <p class="marquee text-white-75 font-weight-light mb-5">
@@ -54,7 +54,7 @@ layout: default
                 </div>
             </div>-->
             <div id="carouselExampleIndicators" class="col-md-4 carousel slide shadow-lg p-0 mb-5" data-ride="carousel"
-                style="background-color:black;margin-top:10%;overflow: hidden;width: 100%important;height: 65vh !important;">
+                style="background-color:black;margin-top:12%;overflow: hidden;width: 100%important;height: 65vh !important;">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
