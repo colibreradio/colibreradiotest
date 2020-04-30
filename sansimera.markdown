@@ -15,7 +15,7 @@ layout: category
         {% if category[0] == 'Sansimera' %}
             <li class="list-group-item" style="margin-bottom:2%">
                 <div class="row justify-content-left">
-                    <h4 style="text-align: center;color: #c53025;margin-bottom:5%">{{ category[0] | camelcase }}</h4>
+                    <h4 style="text-align: center;color: #c53025;margin-bottom:5%">Σαν Σήμερα</h4>
                 </div>
                 <div class="row" style="margin-bottom 2%">
                 {% assign pages_list = category[1] %}
