@@ -1,6 +1,6 @@
 backend:
  name: github
- branch: master
+ branch: Production
  repo: colibreradio/colibreradiotest
 
 media_folder: "images/uploads"
