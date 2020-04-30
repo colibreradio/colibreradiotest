@@ -1,0 +1,11 @@
+{% if category[0] == 'news' %}
+{{ site.data.site.news }}
+{% elsif category[0] == 'music' %}
+{{ site.data.site.music }}
+{% elsif category[0] == 'art' %}
+{{ site.data.site.art }}
+{% elsif category[0] == 'social' %}
+{{ site.data.site.social }}
+{% elsif category[0] == 'sansimera' %}
+{{ site.data.site.sansimera }}
+{% endif %}

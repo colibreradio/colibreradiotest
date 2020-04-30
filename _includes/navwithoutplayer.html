@@ -11,7 +11,9 @@
                     Posts<b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         {% for category in site.categories %}
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" tabindex="-1" href="/{{ category[0] | camelcase }}.html">{{ category[0] | camelcase }}</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" tabindex="-1" href="/{{ category[0] }}.html">
+                            {% include categorycondition.html %}
+                        </a></li>
                         {% endfor %}
                     </ul>
                 </li>

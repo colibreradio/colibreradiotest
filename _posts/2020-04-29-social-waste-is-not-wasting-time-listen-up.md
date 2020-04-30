@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SOCIAL WASTE Is not wasting time.. Listen Up!
-categories: Music
+categories: music
 date: 2020-04-29T21:13:49.344Z
 author: Yolanda
 thumbnail: /images/uploads/hiphop.png
