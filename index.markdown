@@ -104,9 +104,11 @@ layout: default
         </div>
         <ul class="list-group list-group-flush">
             {% for category in site.categories %}
-            <li class="list-group-item" style="margin-bottom:2%;padding-top:4%;" id="{{ category[0] | camelcase }}">
+            <li class="list-group-item" style="margin-bottom:2%;padding-top:4%;" id="{{ category[0]}}">
                 <div class="row justify-content-left">
-                    <h4 style="text-align: center;color: #c53025;">{{ category[0] | camelcase }}</h4>
+                    <h4 style="text-align: center;color: #c53025;">
+                    {% include categorycondition.html %}
+                    </h4>
                 </div>
                 <div class="row" style="margin-bottom 2%">
                     {% assign pages_list = category[1] %}
@@ -132,7 +134,7 @@ layout: default
                     {% endfor %}
                 </div>
                 <div class="row justify-content-right" style="margin-top:2%;float: right;">
-                    <a href="/{{ category[0] | camelcase }}.html" target="_blank">See All Posts</a>
+                    <a href="/{{ category[0]}}.html" target="_blank">See All Posts</a>
                 </div>
             </li>
             {% endfor %}

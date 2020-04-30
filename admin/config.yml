@@ -24,6 +24,21 @@ collections:
            name: "browsercompatibility"
            width: "string"
            required: false
+         - label: "News Category Name"
+           name: "news"
+           width: "string"
+         - label: "Music Category Name"
+           name: "music"
+           width: "string"
+         - label: "Social Category Name"
+           name: "social"
+           width: "string"
+         - label: "Art Category Name"
+           name: "art"
+           width: "string"
+         - label: "San Simera Category Name"
+           name: "sansimera"
+           width: "string"
 
   - name: "post" # Used in routes, e.g., /admin/collections/blog
     label: "Posts" # Used in the UI

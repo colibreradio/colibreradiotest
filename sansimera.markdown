@@ -12,10 +12,10 @@ layout: category
         </div>
         <ul class="list-group list-group-flush">
         {% for category in site.categories %}
-        {% if category[0] == 'music' %}
+        {% if category[0] == 'sansimera' %}
             <li class="list-group-item" style="margin-bottom:2%">
                 <div class="row justify-content-left">
-                    <h4 style="text-align: center;color: #c53025;margin-bottom:5%">{{ site.data.site.music }}</h4>
+                    <h4 style="text-align: center;color: #c53025;margin-bottom:5%">{{ site.data.site.sansimera }}</h4>
                 </div>
                 <div class="row" style="margin-bottom 2%">
                 {% assign pages_list = category[1] %}
