@@ -68,7 +68,7 @@ layout: category
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Αρχείο/Εικόνα/Βίντεο</label>
-                              <input type="file" id="file" name="file" class="form-control" />                        
+                              <input type="file" id="file" name="file" class="form-control-file" />                        
                         </div>
                     </div>
                 </div>                
