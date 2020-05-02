@@ -12,7 +12,7 @@ layout: category
             </div>
 <div class="container">
     <!--Section heading-->
-    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">Φόρμα Επικοινωνίας/Απόστολή Άρθρου</h2>
+    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">Φόρμα Επικοινωνίας / Αποστολή Άρθρου</h2>
     <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5"></p>
     <div class="row justify-content-center">
@@ -84,7 +84,7 @@ layout: category
                     </div>
                 </div>
                 <!--Grid row-->
-                <div class="field">
+                <div class="field" style="margin-top:2%">
                 <div data-netlify-recaptcha="true">
                 </div>
             </div>
