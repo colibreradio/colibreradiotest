@@ -6,7 +6,7 @@ layout: category
 ---
 
 <div> 
-<section class="page-section" id="posts">
+<section class="page-section">
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 5%;">            
         </div>
@@ -17,7 +17,7 @@ layout: category
                 <div class="row justify-content-left">
                     <h4 style="text-align: center;color: #c53025;margin-bottom:5%">{{ site.data.site.news }}</h4>
                 </div>
-                <div class="row" style="margin-bottom 2%">
+                <div class="row" style="margin-bottom:2%">
                 {% assign pages_list = category[1] %}
                 {% for post in pages_list %}
                     {% include tile.html %}

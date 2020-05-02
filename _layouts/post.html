@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+{% include headpost.html %}
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="{{ page.title }}" />
-    <meta name="author" content="colibre" />
-    <meta property="og:image" content="https://colibreradio.netlify.app{{page.thumbnail}}"/>
-    <meta property="og:url" content="{{page.url}}" />
-    <meta property="og:type"  content="article" />
-    <meta property="og:title" content="CoLibre Radio" />
-    <meta property="og:description" content="{{ page.title }}" />
- <title>{{ page.title }} | Co Libre Radio</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css" />
-    <!-- Third party plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-        rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{site.baseurl}}/css/styles.css" rel="stylesheet" />
-</head>
 <body id="page-top">
 
     {% include navwithoutplayer.html %}
@@ -40,7 +13,7 @@
                         <p>{{ page.date | date: "%-d %B %Y %R" }} - {{ page.author }}</p>
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <img class="img-fluid" src="{{page.thumbnail}}"></img>
+                        <img class="img-fluid" src="{{page.thumbnail}}"/>
                         <p class="text-white-75 font-weight-light mb-5">
 
                             {{content}}

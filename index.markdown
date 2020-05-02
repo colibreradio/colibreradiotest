@@ -110,7 +110,7 @@ layout: default
                     {% include categorycondition.html %}
                     </h4>
                 </div>
-                <div class="row" style="margin-bottom 2%">
+                <div class="row" style="margin-bottom:2%">
                     {% assign pages_list = category[1] %}
                     {% assign count = 0 %}
                     {% for post in pages_list %}

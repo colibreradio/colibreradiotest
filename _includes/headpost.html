@@ -4,10 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Blog, News and web radio." />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="{{ page.title }}" />
     <meta name="author" content="colibre" />
- <title>Co-Libre Radio</title>
+    <meta property="og:image" content="https://colibreradio.netlify.app{{page.thumbnail}}"/>
+    <meta property="og:url" content="{{page.url}}" />
+    <meta property="og:type"  content="article" />
+    <meta property="og:title" content="CoLibre Radio" />
+    <meta property="og:description" content="{{ page.title }}" />
+ <title>{{ page.title }} | Co Libre Radio</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
