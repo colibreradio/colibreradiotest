@@ -20,7 +20,7 @@ layout: category
         <div class="col-md-9 mb-md-0 mb-5">
             <form name="contact" method="POST" data-netlify="true">
                 <!--Grid row-->
-                <div class="row">
+                <div class="row" style="margin-top:2%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Τίτλος</label>
@@ -30,7 +30,7 @@ layout: category
                 </div>
                 <!--Grid row-->
                 <!--Grid row-->
-                <div class="row">
+                <div class="row" style="margin-top:2%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Όνομα/Ψευδώνυμο</label>
@@ -39,7 +39,7 @@ layout: category
                     </div>
                 </div>
                 <!--Grid row-->
-                <div class="row">
+                <div class="row" style="margin-top:2%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Email (προαιρετκό)</label>
@@ -49,7 +49,7 @@ layout: category
                 </div>
                 <!--Grid row-->
                 <!--Grid row-->
-                <div class="row">
+                <div class="row" style="margin-top:2%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Κατηγορία</label>
@@ -64,7 +64,7 @@ layout: category
                     </div>
                 </div>
                 <!--Grid row-->
-                <div class="row">
+                <div class="row" style="margin-top:2%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Αρχείο/Εικόνα/Βίντεο</label>
@@ -73,7 +73,7 @@ layout: category
                     </div>
                 </div>                
                 <!--Grid row-->
-                <div class="row">
+                <div class="row" style="margin-top:2%">
                     <!--Grid column-->
                     <div class="col-md-12">
                         <div class="md-form">
