@@ -1,10 +1,10 @@
 maindesc: Colectividad libre de Atenas
 banner: ""
-browsercompatibility: "Συμβάτοι browsers για ακρόαση: Firefox, Internet Explorer
-  και DuckDuckGo. Για να ακούσετε σε Google Chrome χρειάζεται από το site
-  settings στο Insecure content να επιλέξετε Allow."
-news: "News"
-music: "Music"
-art: "Art"
-sansimera: "Σαν Σήμερα"
-social: "Κοινωνικά"
+browsercompatibility: "Συμβάτοι browsers για ακρόαση: Firefox, Opera, Internet
+  Explorer και DuckDuckGo. Για να ακούσετε σε Google Chrome χρειάζεται από το
+  site settings στο Insecure content να επιλέξετε Allow."
+news: News
+music: Music
+social: Κοινωνικά
+art: Art
+sansimera: Σαν Σήμερα
