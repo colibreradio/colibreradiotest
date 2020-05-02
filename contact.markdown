@@ -12,7 +12,7 @@ layout: category
             </div>
 <div class="container">
     <!--Section heading-->
-    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">Contact</h2>
+    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">Φόρμα Επικοινωνίας/Απόστολή Άρθρου</h2>
     <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5"></p>
     <div class="row justify-content-center">
@@ -67,8 +67,8 @@ layout: category
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="subject" class="">Εικόνα</label>
-                              <input type="file" id="image" name="image" class="form-control" />                        
+                            <label for="subject" class="">Αρχείο/Εικόνα/Βίντεο</label>
+                              <input type="file" id="file" name="file" class="form-control" />                        
                         </div>
                     </div>
                 </div>                
