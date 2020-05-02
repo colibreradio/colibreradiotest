@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-
+layout: default
 ---
 
         
@@ -78,10 +78,10 @@
                 <div data-netlify-recaptcha="true">
                 </div>
             </div>
-            </form>
             <div class="text-center text-md-left" style="margin-top:2%">
                 <button type="submit">Send</button>
             </div>
+            </form>
         </div>
         <!--Grid column-->
     </div>
