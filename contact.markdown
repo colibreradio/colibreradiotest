@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
+layout: category
 ---
 
         
@@ -79,7 +79,7 @@ layout: default
                 </div>
             </div>
             <div class="text-center text-md-left" style="margin-top:2%">
-                <button type="submit">Send</button>
+                <button type="submit" class="btn btn-primary">Send</button>            
             </div>
             </form>
         </div>
