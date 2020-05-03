@@ -12,7 +12,7 @@ layout: category
             </div>
 <div class="container">
     <!--Section heading-->
-    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">Φόρμα Επικοινωνίας / Αποστολή Άρθρου</h2>
+    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">Contact Us or Send a Post</h2>
     <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5"></p>
     <div class="row justify-content-center">
@@ -23,7 +23,7 @@ layout: category
                 <div class="row" style="margin-top:1%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="subject" class="">Τίτλος</label>
+                            <label for="subject" class="">Title</label>
                             <input type="text" id="title" name="title" class="form-control" required>                            
                         </div>
                     </div>
@@ -33,7 +33,7 @@ layout: category
                 <div class="row" style="margin-top:1%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="subject" class="">Όνομα/Ψευδώνυμο</label>
+                            <label for="subject" class="">Your Name</label>
                             <input type="text" id="name" name="name" class="form-control" required>                            
                         </div>
                     </div>
@@ -42,7 +42,7 @@ layout: category
                 <div class="row" style="margin-top:1%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="subject" class="">Email (προαιρετκό)</label>
+                            <label for="subject" class="">Email (not required)</label>
                             <input type="text" id="name" name="name" class="form-control">                            
                         </div>
                     </div>
@@ -52,10 +52,10 @@ layout: category
                 <div class="row" style="margin-top:1%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="subject" class="">Κατηγορία</label>
+                            <label for="subject" class="">Category</label>
                               <select class="form-control custom-select" id="category" name="category" required>
-                              <option disabled selected value>Επιλογή...</option>
-                              <option value="justcontact">Επικοινωνία</option>
+                              <option disabled selected value>Choose...</option>
+                              <option value="justcontact">Contact</option>
                               {% for category in site.categories %}
                               <option value="{{ category[0] }}">{% include categorycondition.html %}</option>
                               {% endfor %}
@@ -67,7 +67,7 @@ layout: category
                 <div class="row" style="margin-top:1%">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="subject" class="">Αρχείο/Εικόνα/Βίντεο</label>
+                            <label for="subject" class="">File/Image/Video</label>
                               <input type="file" id="file" name="file" class="form-control-file" />                        
                         </div>
                     </div>
@@ -77,7 +77,7 @@ layout: category
                     <!--Grid column-->
                     <div class="col-md-12">
                         <div class="md-form">
-                        <label for="message">Κείμενο</label>
+                        <label for="message">Text</label>
                             <textarea type="text" id="body" name="body" rows="18"
                                 class="form-control md-textarea" required></textarea>                            
                         </div>
@@ -89,7 +89,7 @@ layout: category
                 </div>
             </div>
             <div class="text-center text-md-left" style="margin-top:2%">
-                <button type="submit" class="btn btn-primary">Αποστολή</button>            
+                <button type="submit" class="btn btn-primary">Submit</button>            
             </div>
             </form>
         </div>
