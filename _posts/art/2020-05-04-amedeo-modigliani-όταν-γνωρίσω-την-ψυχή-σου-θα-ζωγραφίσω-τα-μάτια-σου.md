@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Amedeo Modigliani: "Όταν γνωρίσω την ψυχή σου, θα ζωγραφίσω τα μάτια σου"'
+title: "Amedeo Modigliani: Όταν γνωρίσω την ψυχή σου, θα ζωγραφίσω τα μάτια σου"
 categories: art
 date: 2020-05-04T13:46:33.685Z
 author: Colibre
