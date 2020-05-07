@@ -66,7 +66,7 @@ thumbnail: /images/uploads/velvetdress.jpg
 **Το 1937** και ενώ η σχέση της με τον Rivera δεν πήγαινε καλά, η Frida **ζει έναν τρελό και θυελλώδη έρωτα με τον Leon Trotsky**, για τον οποία η Frida είναι και ο τελευταίος του έρωτας. Ο Trotsky τότε είχε εξοριστεί από τον Stalin και φιλοξενούταν στο Μεξικό από τον Rivera και την Frida. Η ερωτική τους ιστορία διήρκησε 6 μήνες. Όταν το έμαθε ο Rivera επέτρεψε στον Trotsky να συνεχίσει να μένει στο σπίτι τους. Η Frida με τον Trotsky παρέμειναν φίλοι μέχρι το τέλος της ζωής του.  
 
 <figure class="figure">
-  <img src="/images/uploads/dedicatedtotrotsky.png" class="figure-img img-fluid rounded" alt="Self-Portrait Dedicated to Leon Trotsky (1937) by Frida Kahlo National Museum of Women in the Arts">
+  <img src="/images/uploads/dedicatedtotrotsky.jpg" class="figure-img img-fluid rounded" alt="Self-Portrait Dedicated to Leon Trotsky (1937) by Frida Kahlo National Museum of Women in the Arts">
   <figcaption class="figure-caption text-right">Self-Portrait Dedicated to Leon Trotsky (1937) by Frida Kahlo National Museum of Women in the Arts</figcaption>
 </figure>
 
