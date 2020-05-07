@@ -115,7 +115,7 @@ layout: default
                     {% assign count = 0 %}
                     {% for post in pages_list %}
                     {% assign count = count | plus:1 %}
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 form-group">
                         <div class="card" style="width: 18rem;height: 32rem !important;">
                             <img class="card-img-top" src="{{ post.thumbnail }}" alt="No post image..">
                             <div class="card-body">

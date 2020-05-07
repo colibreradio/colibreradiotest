@@ -6,18 +6,16 @@ layout: category
 ---
 
 <div> 
-<section class="page-section" id="posts">
+<section id="posts">
     <div class="container">
-        <div class="row justify-content-center" style="margin-top: 5%;">            
-        </div>
         <ul class="list-group list-group-flush">
         {% for category in site.categories %}
         {% if category[0] == 'art' %}
-            <li class="list-group-item" style="margin-bottom:2%">
+            <li class="list-group-item">
                 <div class="row justify-content-left">
-                    <h4 style="text-align: center;color: #c53025;margin-bottom:5%">{{ site.data.site.art }}</h4>
+                    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">{{ site.data.site.art }}</h2>
                 </div>
-                <div class="row" style="margin-bottom:2%">
+                <div class="row">
                 {% assign pages_list = category[1] %}
                 {% for post in pages_list %}
                    {% include tile.html %} 

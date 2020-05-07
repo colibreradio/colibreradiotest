@@ -8,7 +8,7 @@ layout: category
         
 <!--Section: Contact v.2-->
 <section class="mb-4">
-<div class="row justify-content-center" style="margin-top: 7%;">            
+<div class="row justify-content-center">            
             </div>
 <div class="container">
     <!--Section heading-->
