@@ -4,7 +4,7 @@ title: "Frida Kahlo: Viva la vida!"
 categories: art
 date: 2020-05-07T11:07:25.265Z
 author: Colibre
-thumbnail: /images/uploads/vivalavida.jpg
+thumbnail: /images/uploads/velvetdress.jpg
 ---
 «Πόδια? Τι να τα κάνω, αφού έχω φτερά για να πετάω.» Από το ημερολόγιο της Frida Kahlo, 1953.
 
@@ -84,3 +84,8 @@ thumbnail: /images/uploads/vivalavida.jpg
 **Τα τελευταία χρόνια της ζωής της η υγεία της επιδεινώθηκε.** Τα τελευταία 10 χρόνια φορούσε πάνω από 25 κορσέδες που κρατούσαν σταθερό τον κορμό της. 
 
 **Ο πίνακας «Ζήτω η ζωή!» ήταν από τα τελευταία έργα της τον οποίο ζωγράφισε τη χρονιά που πέθανε (1954). Παρά την επιδείνωση της υγείας της ο τίτλος του έργου είναι αφιέρωμα στη ζωή.**
+
+<figure class="figure">
+  <img src="/images/uploads/vivalavida.jpg" class="figure-img img-fluid rounded" alt="Viva la vida (1954) by Frida Kahlo Museo Frida Kahlo">
+  <figcaption class="figure-caption text-right">Viva la vida (1954) by Frida Kahlo Museo Frida Kahlo</figcaption>
+</figure>
