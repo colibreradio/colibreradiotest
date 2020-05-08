@@ -15,7 +15,7 @@ layout: category
     <p class="text-center w-responsive mx-auto mb-5"></p>
     <div class="row justify-content-center">
         <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
+        <div class="col-md-8 mb-md-0 mb-5">
             <form name="contact" method="POST" data-netlify="true">
                 <!--Grid row-->
                 <div class="row" style="margin-top:1%">
