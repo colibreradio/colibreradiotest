@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-scrolled bg-light" id="postNav">
     <div class="container" style="margin-left: 4%;margin-right: 4%;">
-        <a class="navbar-brand js-scroll-trigger" href="{% if page.url == '/index.html' or page.url == '/' %}#page-top{% else %}{{site.baseurl}}/index.html#page-top{% endif %}">CoLibre
+        <a class="navbar-brand js-scroll-trigger"
+            href="{% if page.url == '/index.html' or page.url == '/' %}#page-top{% else %}{{site.baseurl}}/index.html#page-top{% endif %}">CoLibre
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -9,8 +10,8 @@
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                 <li class="nav-item dropdown">
                     <a id="drop1" class="nav-link js-scroll-trigger dropdown-toggle"
-                    href="{% if page.url == '/index.html' or page.url == '/' %}#posts{% else %}{{site.baseurl}}/index.html#posts{% endif %}">
-                    Posts<b class="caret"></b></a>
+                        href="{% if page.url == '/index.html' or page.url == '/' %}#posts{% else %}{{site.baseurl}}/index.html#posts{% endif %}">
+                        Posts<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         {% for category in site.categories %}
                         <li class="dropdown-item"><a class="js-scroll-trigger" tabindex="-1"
@@ -20,7 +21,9 @@
                         {% endfor %}
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% if page.url == '/index.html' or page.url == '/' %}#chat{% else %}{{site.baseurl}}/index.html#chat{% endif %}">Chat</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                        href="{% if page.url == '/index.html' or page.url == '/' %}#chat{% else %}{{site.baseurl}}/index.html#chat{% endif %}">Chat</a>
+                </li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/contact.html">Contact</a></li>
             </ul>
         </div>

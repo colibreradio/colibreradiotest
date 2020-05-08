@@ -70,7 +70,7 @@ layout: default
                             src="{{ post.thumbnail }}">
                         <div class="carousel-caption" style="margin-bottom:2%">
                             <a href="{{ post.url }}" target="_blank"
-                                    style="background-color: #c53025;color:white;">{{ post.title }}</a>
+                                style="background-color: #c53025;color:white;">{{ post.title }}</a>
                         </div>
                     </div>
                     {% if count == 3 %}{% break %}
@@ -87,52 +87,53 @@ layout: default
                 </a>
             </div>
         </div>
-</header>
-<section class="page-section bg-primary" id="chat">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pt-5">
-            <h3 class="text-white font-weight-bold pt-3">Chat Room</h3>
+    </header>
+    <section class="page-section bg-primary" id="chat">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pt-5">
+                <h3 class="text-white font-weight-bold pt-3">Chat Room</h3>
             </div>
             <div class="row justify-content-center">
-            <iframe src="https://minnit.chat/CoLibreChat?embed&nickname=" class="shadow mb-4 bg-white"
-                style="border:0;width:90%;height:500px;" allowTransparency="true"></iframe>
+                <iframe src="https://minnit.chat/CoLibreChat?embed&nickname=" class="shadow mb-4 bg-white"
+                    style="border:0;width:90%;height:500px;" allowTransparency="true"></iframe>
+            </div>
         </div>
-    </div>
-</section>
-<section class="page-section" id="posts">
-    <div class="container">
-        <div class="row justify-content-center pt-5">
-            <h3 class="font-weight-bold pt-3">Posts</h3>
+    </section>
+    <section class="page-section" id="posts">
+        <div class="container">
+            <div class="row justify-content-center pt-5">
+                <h3 class="font-weight-bold pt-3">Posts</h3>
+            </div>
+            <hr>
+            <ul class="list-group list-group-flush">
+                {% for category in site.categories %}
+                <li class="list-group-item pt-5" id="{{ category[0]}}">
+                    <div class="row justify-content-left">
+                        <div class="col-md-10">
+                            <h4 style="text-align: left;color: #c53025;">
+                                {% include categorycondition.html %}
+                            </h4>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="/{{ category[0]}}.html" target="_blank" style="text-align: right;">See All
+                                Posts</a>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:2%">
+                        {% assign pages_list = category[1] %}
+                        {% assign count = 0 %}
+                        {% for post in pages_list %}
+                        {% assign count = count | plus:1 %}
+                        {% include tile.html %}
+                        {% if count == 3 %}{% break %}
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="row justify-content-right" style="margin-top:2%;float: right;">
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-        <hr>
-        <ul class="list-group list-group-flush">
-            {% for category in site.categories %}
-            <li class="list-group-item pt-5" id="{{ category[0]}}">
-                <div class="row justify-content-left">
-                <div class="col-md-10">
-                    <h4 style="text-align: left;color: #c53025;">
-                    {% include categorycondition.html %}
-                    </h4>
-                    </div>
-                    <div class="col-md-2">
-                    <a href="/{{ category[0]}}.html" target="_blank" style="text-align: right;">See All Posts</a>
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom:2%">
-                    {% assign pages_list = category[1] %}
-                    {% assign count = 0 %}
-                    {% for post in pages_list %}
-                    {% assign count = count | plus:1 %}
-                    {% include tile.html %}
-                    {% if count == 3 %}{% break %}
-                    {% endif %}
-                    {% endfor %}
-                </div>
-                <div class="row justify-content-right" style="margin-top:2%;float: right;">                    
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</section>
+    </section>
 </div>
