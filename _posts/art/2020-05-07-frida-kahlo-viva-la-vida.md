@@ -6,7 +6,12 @@ date: 2020-05-07T11:07:25.265Z
 author: Colibre
 thumbnail: /images/uploads/velvetdress.jpg
 ---
-«Πόδια? Τι να τα κάνω, αφού έχω φτερά για να πετάω.» Από το ημερολόγιο της Frida Kahlo, 1953.
+<blockquote class="blockquote-reverse">
+<p>Πόδια? Τι να τα κάνω, αφού έχω φτερά για να πετάω.</p>
+<footer>Από το ημερολόγιο της <cite title="Frida Kahlo">Frida Kahlo</cite>, 1953</footer>
+</blockquote>
+
+<hr>
 
 <figure class="figure">
   <img src="/images/uploads/1the-chick-frida-kahlo.jpg" class="figure-img img-fluid rounded" alt="The Chick (1945) by Frida Kahlo Museo Dolores Olmedo">
