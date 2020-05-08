@@ -9,7 +9,7 @@ layout: category
     <div class="container">
         {% for category in site.categories %}
         {% if category[0] == 'sansimera' %}
-        <h2 class="page-header">{{ site.data.site.art }}</h2>
+        <h2 class="page-header">{{ site.data.site.sansimera }}</h2>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
                 <div class="row">
