@@ -6,7 +6,7 @@ date: 2020-05-07T11:07:25.265Z
 author: Colibre
 thumbnail: /images/uploads/velvetdress.jpg
 ---
-<blockquote class="blockquote">
+<blockquote class="blockquote-reverse">
 <p>Πόδια? Τι να τα κάνω, αφού έχω φτερά για να πετάω.</p>
 <footer>Από το ημερολόγιο της <cite title="Frida Kahlo">Frida Kahlo</cite>, 1953</footer>
 </blockquote>
