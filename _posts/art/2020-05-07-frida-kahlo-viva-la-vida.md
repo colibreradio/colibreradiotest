@@ -11,6 +11,8 @@ thumbnail: /images/uploads/velvetdress.jpg
 <footer>Από το ημερολόγιο της <cite title="Frida Kahlo">Frida Kahlo</cite>, 1953</footer>
 </blockquote>
 
+
+
 <figure class="figure">
   <img src="/images/uploads/1the-chick-frida-kahlo.jpg" class="figure-img img-fluid rounded" alt="The Chick (1945) by Frida Kahlo Museo Dolores Olmedo">
   <figcaption class="figure-caption text-right">The Chick (1945) by Frida Kahlo Museo Dolores Olmedo</figcaption>
