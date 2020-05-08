@@ -18,7 +18,7 @@ layout: category
         <div class="col-md-8 mb-md-0 mb-5">
             <form name="contact" method="POST" data-netlify="true">
                 <!--Grid row-->
-                <div class="row" style="margin-top:1%">
+                <div class="row mt-1">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Title</label>
@@ -28,7 +28,7 @@ layout: category
                 </div>
                 <!--Grid row-->
                 <!--Grid row-->
-                <div class="row" style="margin-top:1%">
+                <div class="row mt-1">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Your Name</label>
@@ -37,7 +37,7 @@ layout: category
                     </div>
                 </div>
                 <!--Grid row-->
-                <div class="row" style="margin-top:1%">
+                <div class="row mt-1">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Email (not required)</label>
@@ -47,7 +47,7 @@ layout: category
                 </div>
                 <!--Grid row-->
                 <!--Grid row-->
-                <div class="row" style="margin-top:1%">
+                <div class="row mt-1">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Category</label>
@@ -62,7 +62,7 @@ layout: category
                     </div>
                 </div>
                 <!--Grid row-->
-                <div class="row" style="margin-top:1%">
+                <div class="row mt-1">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">File/Image/Video</label>
@@ -71,7 +71,7 @@ layout: category
                     </div>
                 </div>                
                 <!--Grid row-->
-                <div class="row" style="margin-top:1%">
+                <div class="row mt-1">
                     <!--Grid column-->
                     <div class="col-md-12">
                         <div class="md-form">
@@ -82,11 +82,11 @@ layout: category
                     </div>
                 </div>
                 <!--Grid row-->
-                <div class="field" style="margin-top:2%">
+                <div class="field mt-3">
                 <div data-netlify-recaptcha="true">
                 </div>
             </div>
-            <div class="text-center text-md-left" style="margin-top:2%">
+            <div class="text-center text-md-left mt-3">
                 <button type="submit" class="btn btn-primary">Submit</button>            
             </div>
             </form>

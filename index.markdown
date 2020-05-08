@@ -108,7 +108,7 @@ layout: default
             <ul class="list-group list-group-flush">
                 {% for category in site.categories %}
                 <li class="list-group-item pt-5" id="{{ category[0]}}">
-                    <div class="row justify-content-left">
+                    <div class="row justify-content-left pt-2">
                         <div class="col-md-10">
                             <h4 style="text-align: left;color: #c53025;">
                                 {% include categorycondition.html %}
@@ -119,7 +119,7 @@ layout: default
                                 Posts</a>
                         </div>
                     </div>
-                    <div class="row" style="margin-bottom:2%">
+                    <div class="row mb-3">
                         {% assign pages_list = category[1] %}
                         {% assign count = 0 %}
                         {% for post in pages_list %}
@@ -128,8 +128,6 @@ layout: default
                         {% if count == 3 %}{% break %}
                         {% endif %}
                         {% endfor %}
-                    </div>
-                    <div class="row justify-content-right" style="margin-top:2%;float: right;">
                     </div>
                 </li>
                 {% endfor %}
