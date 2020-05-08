@@ -7,14 +7,14 @@ layout: default
 
 <div>
     <header class="masthead">
-        <div class="row" style="margin-right:1%;margin-left:1%;">
+        <div class="row mr-3 ml-3 mb-2">
             <div class="col-md-8">
                 <div class="row justify-content-md-right" style="margin-top:5%">
-                    <p class="marquee text-white-75 font-weight-light mb-5">
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <p class="marquee text-white-75 font-weight-light mb-5 col-md-12">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>site.data.site.banner</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
-                    <p class="marquee marquee2 text-white-75 font-weight-light mb-5">
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <p class="marquee marquee2 text-white-75 font-weight-light mb-5 col-md-12">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>site.data.site.banner</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
                 </div>
                 <div class="row justify-content-md-center" style="margin-top:20%">
@@ -53,8 +53,8 @@ layout: default
                     </ul>
                 </div>
             </div>-->
-            <div id="carouselExampleIndicators" class="col-md-4 carousel slide shadow-lg p-0 mb-5" data-ride="carousel"
-                style="background-color:black;margin-top:12%;overflow: hidden;width: 100%important;height: 65vh !important;">
+            <div id="carouselExampleIndicators" class="col-md-4 carousel slide shadow-lg p-0 w-100" data-ride="carousel"
+                style="background-color:black;margin-top:12%;overflow: hidden;height: 65vh !important;">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -90,25 +90,33 @@ layout: default
 </header>
 <section class="page-section bg-primary" id="chat">
     <div class="container">
-        <div class="row justify-content-center">
-            <h3 class="text-white font-weight-bold" style="margin-bottom: 2%;">Chat Room</h3>
-            <iframe src="https://minnit.chat/CoLibreChat?embed&nickname=" class="shadow mb-5 bg-white"
+        <div class="row justify-content-center mb-5 pt-5">
+            <h3 class="text-white font-weight-bold pt-3">Chat Room</h3>
+            </div>
+            <div class="row justify-content-center">
+            <iframe src="https://minnit.chat/CoLibreChat?embed&nickname=" class="shadow mb-4 bg-white"
                 style="border:0;width:90%;height:500px;" allowTransparency="true"></iframe>
         </div>
     </div>
 </section>
 <section class="page-section" id="posts">
     <div class="container">
-        <div class="row justify-content-center">
-            <h3 class="font-weight-bold" style="margin-bottom: 2%;">Posts</h3>
+        <div class="row justify-content-center pt-5">
+            <h3 class="font-weight-bold pt-3">Posts</h3>
         </div>
+        <hr>
         <ul class="list-group list-group-flush">
             {% for category in site.categories %}
-            <li class="list-group-item" style="margin-bottom:2%;padding-top:4%;" id="{{ category[0]}}">
+            <li class="list-group-item pt-5" id="{{ category[0]}}">
                 <div class="row justify-content-left">
-                    <h4 style="text-align: center;color: #c53025;">
+                <div class="col-md-10">
+                    <h4 style="text-align: left;color: #c53025;">
                     {% include categorycondition.html %}
                     </h4>
+                    </div>
+                    <div class="col-md-2">
+                    <a href="/{{ category[0]}}.html" target="_blank" style="text-align: right;">See All Posts</a>
+                    </div>
                 </div>
                 <div class="row" style="margin-bottom:2%">
                     {% assign pages_list = category[1] %}
@@ -120,8 +128,7 @@ layout: default
                     {% endif %}
                     {% endfor %}
                 </div>
-                <div class="row justify-content-right" style="margin-top:2%;float: right;">
-                    <a href="/{{ category[0]}}.html" target="_blank">See All Posts</a>
+                <div class="row justify-content-right" style="margin-top:2%;float: right;">                    
                 </div>
             </li>
             {% endfor %}

@@ -8,17 +8,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                 <li class="nav-item dropdown">
-                    <a id="drop1" data-toggle="dropdown" class="nav-link dropdown-toggle"
-                        href="#">
+                    <a id="drop1" data-toggle="dropdown" class="nav-link js-scroll-trigger dropdown-toggle" aria-haspopup="true"
+                        href="{% if page.url == '/index.html' or page.url == '/' %}#posts{% else %}{{site.baseurl}}/index.html#posts{% endif %}">
                         Posts<b class="caret"></b></a>
-                    <div class="dropdown-menu">
+                    <ul class="dropdown-menu">
                         {% for category in site.categories %}
-                        <a class="dropdown-item js-scroll-trigger"
-                                href="{% if page.url == '/index.html' or page.url == '/' %}#{{ category[0] }}{% else %}{{site.baseurl}}/{{ category[0]}}.html{% endif %}">
+                        <li class="dropdown-item"><a class="js-scroll-trigger" tabindex="-1"
+                                href="{% if page.url == '/index.html' or page.url == '/' %}#{{ category[0] }}{% else %}{{site.baseurl}}/{{ category[0]}}.html{% endif %}"
+                                target="_blank">
                                 {% include categorycondition.html %}
-                            </a>
+                            </a></li>
                         {% endfor %}
-                    </div>
+                    </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% if page.url == '/index.html' or page.url == '/' %}#chat{% else %}{{site.baseurl}}/index.html#chat{% endif %}">Chat</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/contact.html">Contact</a></li>
