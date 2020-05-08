@@ -7,15 +7,18 @@
             aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                <li class="nav-item dropdown"><a id="drop1" data-toggle="dropdown" class="nav-link js-scroll-trigger dropdown-toggle" href="{% if page.url == '/index.html' or page.url == '/' %}#posts{% else %}{{site.baseurl}}/index.html#posts{% endif %}">
-                    Posts<b class="caret"></b></a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li class="nav-item dropdown">
+                    <a id="drop1" data-toggle="dropdown" class="nav-link dropdown-toggle"
+                        href="#">
+                        Posts<b class="caret"></b></a>
+                    <div class="dropdown-menu">
                         {% for category in site.categories %}
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" tabindex="-1" href="/{{ category[0] }}.html">
-                            {% include categorycondition.html %}
-                        </a></li>
+                        <a class="dropdown-item js-scroll-trigger"
+                                href="{% if page.url == '/index.html' or page.url == '/' %}#{{ category[0] }}{% else %}{{site.baseurl}}/{{ category[0]}}.html{% endif %}">
+                                {% include categorycondition.html %}
+                            </a>
                         {% endfor %}
-                    </ul>
+                    </div>
                 </li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% if page.url == '/index.html' or page.url == '/' %}#chat{% else %}{{site.baseurl}}/index.html#chat{% endif %}">Chat</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/contact.html">Contact</a></li>

@@ -5,28 +5,23 @@
 layout: category
 ---
 
-<div> 
 <section id="posts">
     <div class="container">
-        <ul class="list-group list-group-flush">
         {% for category in site.categories %}
         {% if category[0] == 'art' %}
+        <h2 class="page-header">{{ site.data.site.art }}</h2>
+        <ul class="list-group list-group-flush">
             <li class="list-group-item">
-                <div class="row justify-content-left">
-                    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">{{ site.data.site.art }}</h2>
-                </div>
                 <div class="row">
-                {% assign pages_list = category[1] %}
-                {% for post in pages_list %}
-                   {% include tile.html %} 
-                {% endfor %}
+                    {% assign pages_list = category[1] %}
+                    {% for post in pages_list %}
+                    {% include tile.html %}
+                    {% endfor %}
                 </div>
             </li>
-        {% endif %}
-        {% endfor %}
+            {% endif %}
+            {% endfor %}
         </ul>
     </div>
 </section>
-</div>
-
 

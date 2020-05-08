@@ -10230,3 +10230,12 @@ ul.dropdown-menu:hover {
   display:none;
 }
 
+.page-header {
+  color: #c53025;
+  text-align: center;
+  margin:5%
+}
+
+.post-header {
+  color: #c53025;
+}

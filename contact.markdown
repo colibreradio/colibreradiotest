@@ -8,11 +8,9 @@ layout: category
         
 <!--Section: Contact v.2-->
 <section class="mb-4">
-<div class="row justify-content-center">            
-            </div>
 <div class="container">
     <!--Section heading-->
-    <h2 style="text-align: center;color: #c53025;margin-bottom:5%">Contact us or Send a Post</h2>
+    <h2 class="page-header">Contact us or Send a Post</h2>
     <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5"></p>
     <div class="row justify-content-center">
