@@ -10238,3 +10238,10 @@ ul.dropdown-menu:hover {
 .post-header {
   color: #c53025;
 }
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

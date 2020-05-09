@@ -7,7 +7,7 @@ layout: default
 
 <div>
     <header class="masthead">
-        <div class="row mr-3 ml-3 mb-2">
+        <div class="row mx-3 mb-2">
             <div class="col-md-8">
                 <div class="row justify-content-md-right" style="margin-top:5%">
                     <p class="marquee text-white-75 font-weight-light mb-5 col-md-12">
@@ -108,18 +108,18 @@ layout: default
             <ul class="list-group list-group-flush">
                 {% for category in site.categories %}
                 <li class="list-group-item pt-5" id="{{ category[0]}}">
-                    <div class="row justify-content-left pt-2">
-                        <div class="col-md-10">
+                    <div class="row d-flex">
+                        <div class="mr-auto p-2">
                             <h4 style="text-align: left;color: #c53025;">
                                 {% include categorycondition.html %}
                             </h4>
                         </div>
-                        <div class="col-md-2">
+                        <div class="p-2">
                             <a href="/{{ category[0]}}.html" target="_blank" style="text-align: right;">See All
                                 Posts</a>
                         </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3 justify-content-md-center justify-content-sm-center">
                         {% assign pages_list = category[1] %}
                         {% assign count = 0 %}
                         {% for post in pages_list %}
