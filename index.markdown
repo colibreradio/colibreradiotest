@@ -119,7 +119,7 @@ layout: default
                                 Posts</a>
                         </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3 justify-content-md-center justify-content-sm-center">
                         {% assign pages_list = category[1] %}
                         {% assign count = 0 %}
                         {% for post in pages_list %}
