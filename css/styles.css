@@ -10194,7 +10194,7 @@ header.masthead h1 {
 }
 
 .marquee2 span {
-  animation-delay: 5s;
+  animation-delay: 10s;
 }
 
 @keyframes marquee {
