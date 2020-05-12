@@ -86,6 +86,19 @@
        $('#back-to-top').tooltip('show');
 
 });
+
+$(document).ready(function() {
+  if ($('#airstatus').text().trim() == "Live") {
+    $('#airstatus').addClass('alert-success'); 
+  }
+  else if ($('#airstatus').text().trim() == "Off Air") {
+    $('#airstatus').addClass('alert-dark'); 
+  }
+  else {
+    $('#airstatus').addClass('alert-warning'); 
+  }
+ 
+});
   
 })(jQuery); // End of use strict
 
