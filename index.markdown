@@ -8,7 +8,7 @@ layout: default
 <div>
     <header class="masthead">
         <div class="row mx-3 mb-2">
-            <div class="col-md-7">
+            <div class="col-md-8">
                 <div class="row justify-content-md-right" style="margin-top:5%">
                     <p class="marquee text-white-75 font-weight-light mb-5 col-md-12">
                         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -53,11 +53,8 @@ layout: default
                     </ul>
                 </div>
             </div>-->
-            <div class="col-md-5 p-0 mr-0 mt-5" style=""> 
-            <div class="row h-25 mx-1"><div class="overflow-auto">element with set width and height dimensions. By design, this content will vertically scroll.</div> </div>
-            <div class="row mr-1">
-            <div id="carouselExampleIndicators" class="carousel slide shadow-lg p-0 w-100" data-ride="carousel"
-                style="background-color:black;overflow: hidden;height: 65vh !important;">
+            <div id="carouselExampleIndicators" class="col-md-4 carousel slide shadow-lg p-0 w-100" data-ride="carousel"
+                style="background-color:black;margin-top:12%;overflow: hidden;height: 65vh !important;">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -88,8 +85,6 @@ layout: default
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
-            </div>
             </div>
         </div>
     </header>
