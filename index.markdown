@@ -29,7 +29,8 @@ layout: default
                     <div class="col-md-6">
                         <div class="row justify-content-center">
                             <p class="text-white-75 font-weight-light mb-5" style="text-align: center">
-                                New location: </p><a href="www.colibreradio.com">www.colibreradio.com</a>
+                                New location: </p><a target="_blank"
+                    href="https://www.colibreradio.com">www.colibreradio.com</a>
                         </div>
                     </div>
                 </div>
