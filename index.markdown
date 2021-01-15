@@ -8,7 +8,7 @@ layout: default
 <div>
     <header class="masthead">
         <div class="row mx-3 mb-2">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="row justify-content-md-right" style="margin-top:5%">
                     <p class="marquee text-white-75 font-weight-light mb-5 col-md-12">
                         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -17,22 +17,22 @@ layout: default
                         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
                 </div>
-                <div class="row justify-content-md-center" style="margin-top:20%">
+                <div class="row justify-content-md-center" style="margin-top:34%">
                     <div class="col-md-6">
                         <div class="row justify-content-center">
-                            <h1 class="text-uppercase text-white font-weight-bold" style="text-align: center">
-                                Co-Libre Radio</h1>
+                            <h1 class="text-white font-weight-bold" style="text-align: center">
+                                CoLibre Radio</h1>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-md-center">
+                <!-- <div class="row justify-content-md-center">
                     <div class="col-md-6">
                         <div class="row justify-content-center">
                             <p class="text-white-75 font-weight-light mb-5" style="text-align: center">
                                 {{site.data.site.maindesc}}</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!--<div class="col-md-4 shadow mb-5 bg-white"
                 style="background-color: white;margin-top:15%;overflow: scroll;height: 60vh !important;">
@@ -53,7 +53,7 @@ layout: default
                     </ul>
                 </div>
             </div>-->
-            <div id="carouselExampleIndicators" class="col-md-4 carousel slide shadow-lg p-0 w-100" data-ride="carousel"
+            <!-- <div id="carouselExampleIndicators" class="col-md-4 carousel slide shadow-lg p-0 w-100" data-ride="carousel"
                 style="background-color:black;margin-top:12%;overflow: hidden;height: 65vh !important;">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -85,7 +85,7 @@ layout: default
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
+            </div> -->
         </div>
     </header>
     <section class="page-section bg-primary" id="chat">
@@ -99,7 +99,7 @@ layout: default
             </div>
         </div>
     </section>
-    <section class="page-section" id="posts">
+    <!-- <section class="page-section" id="posts">
         <div class="container">
             <div class="row justify-content-center pt-5">
                 <h3 class="font-weight-bold pt-3">Posts</h3>
@@ -133,5 +133,5 @@ layout: default
                 {% endfor %}
             </ul>
         </div>
-    </section>
+    </section> -->
 </div>

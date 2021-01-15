@@ -10,7 +10,7 @@ layout: category
 <section class="mb-4">
 <div class="container">
     <!--Section heading-->
-    <h2 class="page-header">Contact us or Send a Post</h2>
+    <h2 class="page-header">Contact us</h2>
     <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5"></p>
     <div class="row justify-content-center">
@@ -18,14 +18,14 @@ layout: category
         <div class="col-md-8 mb-md-0 mb-5">
             <form name="contact" method="POST" data-netlify="true">
                 <!--Grid row-->
-                <div class="row mt-1">
+                <!-- <div class="row mt-1">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Title</label>
                             <input type="text" id="title" name="title" class="form-control" required>                            
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--Grid row-->
                 <!--Grid row-->
                 <div class="row mt-1">
@@ -47,7 +47,7 @@ layout: category
                 </div>
                 <!--Grid row-->
                 <!--Grid row-->
-                <div class="row mt-1">
+                <!-- <div class="row mt-1">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="subject" class="">Category</label>
@@ -60,7 +60,7 @@ layout: category
                              </select>     
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--Grid row-->
                 <div class="row mt-1">
                     <div class="col-md-12">
