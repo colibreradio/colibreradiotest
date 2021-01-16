@@ -7,24 +7,24 @@ layout: default
 
 <div>
     <header class="masthead">
-        <div class="row mx-3 mb-2">
-            <div class="col-md-12">
-                <div class="row justify-content-md-right" style="margin-top:5%">
-                    <p class="marquee text-white-75 font-weight-light mb-5 col-md-12">
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    </p>
-                    <p class="marquee marquee2 text-white-75 font-weight-light mb-5 col-md-12">
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    </p>
-                </div>
-                <div class="row justify-content-md-center" style="margin-top:34%">
-                    <div class="col-md-6">
+           <div class="row justify-content-md-center" style=" position : absolute;bottom   : 0;width:100%;margin-bottom:4%">
+                    <div class="col-md-12">
                         <div class="row justify-content-center">
                             <h1 class="text-white font-weight-bold" style="text-align: center">
                                 CoLibre Radio</h1>
                         </div>
                     </div>
                 </div>
+        <div class="row mx-3 mb-2">
+            <div class="col-md-12">
+                <!-- <div class="row justify-content-md-right" style="margin-top:5%">
+                    <p class="marquee text-white-75 font-weight-light mb-5 col-md-12">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </p>
+                    <p class="marquee marquee2 text-white-75 font-weight-light mb-5 col-md-12">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>{{site.data.site.banner}}</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </p>
+                </div> -->         
                 <!-- <div class="row justify-content-md-center">
                     <div class="col-md-6">
                         <div class="row justify-content-center">
