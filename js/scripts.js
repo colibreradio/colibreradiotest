@@ -1,98 +1,93 @@
-/*!
-    * Start Bootstrap - Creative v6.0.1 (https://startbootstrap.com/themes/creative)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
-    */
-    (function($) {
-  "use strict"; // Start of use strict
+/* Responsive Nav with Javascript */
+const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
+  var navbar = document.querySelector("nav");
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 72)
-        }, 1000, "easeInOutExpo");
-        return false;
+  burger.addEventListener("click", () => {
+    //Toogle Nav
+    nav.classList.toggle("nav-active");
+
+    if (window.pageYOffset <= navbar.offsetTop) {
+      navbar.classList.toggle("sticky");
+    }
+
+    //Burger Animation
+    burger.classList.toggle("anim-rotate");
+  });
+
+  navLinks.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = "";
+    } else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0}s`;
+    }
+
+    link.addEventListener("click", () => {
+      nav.classList.toggle("nav-active");
+      burger.classList.toggle("anim-rotate");
+
+      if (window.pageYOffset <= navbar.offsetTop) {
+        navbar.classList.toggle("sticky");
       }
+    });
+  });
+};
+
+navSlide();
+
+const navTransform = () => {
+  // Get the navbar
+  var navbar = document.querySelector("nav");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  addStickytoNav();
+  // When the user scrolls the page, execute addStickytoNav
+  window.addEventListener("scroll", function (e) {
+    addStickytoNav();
+  });
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove 'sticky' when you leave the scroll position
+  function addStickytoNav() {
+    if (window.pageYOffset > sticky) {
+      navbar.classList.add("sticky");
+      //navbar.classList.add('shadow-sm');
+    } else {
+      navbar.classList.remove("sticky");
+      //navbar.classList.remove('shadow-sm');
     }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 75
-  });
-
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("nav").attr('id') == "mainNav") {
-      if ($("#mainNav").offset().top > 100) {
-         $("#mainNav").addClass("navbar-scrolled");
-      } else {
-         $("#mainNav").removeClass("navbar-scrolled");
-      }
-    }
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
-
-  // Magnific popup calls
-  $('#portfolio').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
-  });
-
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-
-  $(document).ready(function(){
-    $(window).scroll(function () {
-           if ($(this).scrollTop() > 50) {
-               $('#back-to-top').fadeIn();
-           } else {
-               $('#back-to-top').fadeOut();
-           }
-       });
-       // scroll body to 0px on click
-       $('#back-to-top').click(function () {
-           $('#back-to-top').tooltip('hide');
-           $('body,html').animate({
-               scrollTop: 0
-           }, 800);
-           return false;
-       });
-       
-       $('#back-to-top').tooltip('show');
-
-});
-  
-})(jQuery); // End of use strict
-
-var i;
-var divs = document.getElementById('#postpreviewtext');
-for(i=0;i<divs.length;i++) {
-  if(divs[i].className == 'card-text') {
-    divs[i].innerHTML = divs[i].innerHTML.substring(0,20);
   }
-}
+};
+
+navTransform();
+
+const scrollToTop = () => {
+  const backtotop = document.querySelector("#back-to-top");
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      if (!backtotop.classList.contains("btn-entrance")) {
+        backtotop.classList.remove("btn-exit");
+        backtotop.classList.add("btn-entrance");
+        backtotop.style.display = "block";
+      }
+    } else {
+      if (backtotop.classList.contains("btn-entrance")) {
+        backtotop.classList.remove("btn-entrance");
+        backtotop.classList.add("btn-exit");
+        setTimeout(function () {
+          backtotop.style.display = "none";
+        }, 250);
+      }
+    }
+  });
+
+  backtotop.addEventListener("click", function () {
+    window.scrollTo(0, 0);
+  });
+};
+
+scrollToTop();

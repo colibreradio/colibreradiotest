@@ -1,46 +1,36 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container mx-5">
-        <a class="navbar-brand js-scroll-trigger"
-            href="{% if page.url == '/index.html' or page.url == '/' %}#page-top{% else %}{{site.baseurl}}/index.html#page-top{% endif %}">CoLibre
-        </a>
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="E6RGPZXJYRGTG" />
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
-            </form>
-            <!-- <p style="font-size: .95em;">Όλα τα donations θα δίνονται σε ομάδες<br>αυτοοργάνωσης και αλληλεγγύης που<br>βοηθούν ευπαθείς κοινωνικές ομάδες.</p>
-              -->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                <!-- <li class="nav-item dropdown">
-                    <a id="drop1" data-toggle="dropdown" class="nav-link js-scroll-trigger dropdown-toggle"
-                        aria-haspopup="true"
-                        href="{% if page.url == '/index.html' or page.url == '/' %}#posts{% else %}{{site.baseurl}}/index.html#posts{% endif %}">
-                        Posts<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        {% for category in site.categories %}
-                        <li class="dropdown-item"><a class="js-scroll-trigger" tabindex="-1"
-                                href="{% if page.url == '/index.html' or page.url == '/' %}#{{ category[0] }}{% else %}{{site.baseurl}}/{{ category[0]}}.html{% endif %}"
-                                target="_blank">
-                                {% include categorycondition.html %}
-                            </a></li>
-                        {% endfor %}
-                    </ul>
-                </li> -->
-                <li class="nav-item"><a class="nav-link js-scroll-trigger"
-                        href="{% if page.url == '/index.html' or page.url == '/' %}#chat{% else %}{{site.baseurl}}/index.html#chat{% endif %}">Chat</a>
+<header>
+    <nav>
+        <div class="nav-cols">
+            <div>
+                <a href="#" class="logo">CoLibre</a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#chat">Chat</a>
                 </li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/contact.html">Contact</a></li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
+            <div class="player">
+                <script src="//myradiostream.com/embed/colibreradio"></script>
+            </div>
+            <!-- <div class="donatediv">
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="E6RGPZXJYRGTG" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                        name="submit" title="PayPal - The safer, easier way to pay online!"
+                        alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+                <p style="font-size: .95em;">Όλα τα donations θα δίνονται σε ομάδες<br>αυτοοργάνωσης και αλληλεγγύης
+                    που<br>βοηθούν ευπαθείς κοινωνικές ομάδες.</p>
+            </div> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
-    </div>
-    <div class="float-right">
-        <p class="btn btn-primary btn-xl js-scroll-trigger mb-0 mt-1"
-            data-toggle="tooltip" data-placement="bottom" title="{{site.data.site.browsercompatibility}}">
-            <script src="//myradiostream.com/embed/colibreradio"></script>
-        </p>
-    </div>
-</nav>
+    </nav>
+</header>
