@@ -64,7 +64,7 @@ h3 {
   color: var(--light-color);
 }
 
-#chat > div > h3 {
+ h3 {
   padding: 1em;
 }
 
