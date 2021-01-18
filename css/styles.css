@@ -7,6 +7,7 @@
   --secondary-color: #c53025;
   --secondary-color-hover: #f4f4f4;
   --light-color: #fff;
+  --footer-color: #e6e3e3;
 }
 
 * {
@@ -38,6 +39,10 @@ a {
 
 h1, h3 {
   color: var(--light-color);
+}
+
+#chat > div >  h3 {
+  padding: 1em;
 }
 
 /* Navigation Styling */
@@ -117,6 +122,17 @@ nav .nav-cols {
   transition: all 0.3s ease;
 }
 
+.playermain {
+  display: none;
+}
+
+.section-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
@@ -135,7 +151,7 @@ nav .nav-cols {
   nav .nav-cols {
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: auto;
+    grid-template-columns: 3fr 1fr;
     padding: 2rem, 1rem;
     align-items: center;
     text-align: left;
@@ -146,8 +162,8 @@ nav .nav-cols {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 85vh;
-    top: 15vh;
+    height: 92vh;
+    top: 8vh;
     background-color: var(--light-color);
     display: flex;
     flex-direction: column;
@@ -167,6 +183,14 @@ nav .nav-cols {
     cursor: pointer;
   }
 
+  .player {
+    display: none;
+  }
+
+  .playermain {
+    display: inline-block;
+  }
+
   .section-main {
     height: 100vh;
     display: flex;
@@ -174,6 +198,7 @@ nav .nav-cols {
     justify-content: center;
     align-items: center;
   }
+
 }
 
 .nav-active {
@@ -254,13 +279,6 @@ nav .nav-cols {
   font-size: 2.5rem;
 }
 
-.section-main {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
 
 /* Showcase */
 
@@ -269,8 +287,8 @@ nav .nav-cols {
   padding: 0;
   background: linear-gradient(
       to bottom,
-      rgba(92, 77, 66, 0.8) 0%,
-      rgba(92, 77, 66, 0.8) 100%
+      rgba(105, 104, 103, 0.8) 0%,
+      rgba(105, 104, 103, 0.8) 100%
     ),
     url("../assets/img/logo4.jpg") no-repeat center/cover;
   width: 100%;
@@ -288,34 +306,29 @@ nav .nav-cols {
 
 /* Footer */
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--footer-color);
+  color: var(--primary-color);
   margin: 0;
-  padding: 0;
+  padding: 2em;
+  font-size: .8em;
+}
+ 
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-footer .footer-cols {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2rem;
-  text-align: left;
-  font-size: 14px;
+.footer-flex > * {
+  margin: 0 5px;
 }
 
-footer .footer-cols ul {
-  list-style: none;
-  align-self: center;
-  justify-self: center;
-}
 
 @media screen and (max-width: 780px) {
   .card {
     grid-template-columns: 1fr !important;
   }
 
-  footer .footer-cols {
-    display: none;
-  }
 }
 
 /* Utility Classes*/
@@ -426,6 +439,7 @@ footer .footer-cols ul {
 
 #chat {
   background-color: var(--secondary-color);
+  height: 100vh;
 }
 
 .textarea {
@@ -508,4 +522,8 @@ textarea:focus {
   background-color: transparent;
   color: var(--primary-color);
   box-shadow: inset 0 0 0 4px var(--primary-color);
+}
+
+.mt-1 {
+  margin-top: 1em;
 }
