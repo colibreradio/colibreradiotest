@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
+@font-face {
+  font-family: "Comfortaa";
+  src: url("/assets/fonts/Comfortaa/Comfortaa-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  src: url("/assets/fonts/FiraMono/FiraMono-Regular.ttf") format("truetype");
+}
+
 /* CSS Variables*/
 :root {
   --primary-color: #231f20;
@@ -21,7 +31,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Mono", "Roboto", sans-serif;
   background-color: white;
   color: var(--primary-color);
   line-height: 1.6;
@@ -60,7 +70,7 @@ nav {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed !important;
-  background-color: var(--light-color) !important;
+  background-color: var(--footer-color) !important;
   top: 0 !important;
   width: 100% !important;
   /*border-bottom: 1px solid #231f20 !important;*/
@@ -74,7 +84,7 @@ nav {
 nav .nav-cols {
   display: grid;
   grid-gap: 1px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: .6fr 4fr 1fr;
   padding-left: 2rem;
   padding-right: 2rem;
   align-items: center;
@@ -83,6 +93,7 @@ nav .nav-cols {
 }
 
 .nav-links {
+  justify-self: flex-start;
   display: flex;
   justify-content: space-around;
   display: grid;
@@ -99,7 +110,7 @@ nav .nav-cols {
 .nav-links a {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 15px;
+  font-size: 1.5em;
   letter-spacing: 1px;
 }
 
@@ -134,9 +145,9 @@ nav .nav-cols {
 }
 
 @media screen and (max-width: 1024px) {
-  .nav-links {
+  /* .nav-links {
     width: 60%;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -164,7 +175,7 @@ nav .nav-cols {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: var(--light-color);
+    background-color: var(--footer-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,8 +298,8 @@ nav .nav-cols {
   padding: 0;
   background: linear-gradient(
       to bottom,
-      rgba(105, 104, 103, 0.8) 0%,
-      rgba(105, 104, 103, 0.8) 100%
+      rgba(156, 155, 154, 0.7) 0%,
+      rgba(156, 155, 154, 0.7) 100%
     ),
     url("../assets/img/logo4.jpg") no-repeat center/cover;
   width: 100%;
@@ -338,6 +349,13 @@ footer {
   text-align: center;
   margin: 0 auto;
   padding: 0 3rem;
+}
+
+.container2 {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 .5rem;
 }
 
 .primarycolor {
@@ -439,7 +457,7 @@ footer {
 
 #chat {
   background-color: var(--secondary-color);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .textarea {
