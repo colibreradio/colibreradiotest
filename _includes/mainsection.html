@@ -36,20 +36,20 @@
         <h3 class="primarycolor">Contact Us</h3>
     </div>
 
-    <form id="myForm" class="form-container" data-netlify="true">
+    <form name="contact" class="form-container" method="POST" data-netlify="true">
         <!--Grid row-->
         <input type="text" id="name" name="name" class="form-control" required>
         <label for="name" id="namelabel">Your Name*</label>
         <!--Grid row-->
-        <input type="text" id="email" name="email" class="form-control">
+        <input type="email" id="email" name="email" class="form-control">
         <label for="email" id="emaillabel">Email</label>
         <!--Grid row-->
-        <textarea type="text" id="body" name="body" class="form-control textarea" required></textarea>
+        <textarea type="text" id="body" name="message" class="form-control textarea" required></textarea>
         <label for="message" id="messagelabel">Text*</label>
         <div class="mt-1">
-            <button id="submit" class="btn">Submit</button>
+            <button type="submit" class="btn">Send</button>
         </div>
-    </form>
+      </form>
 
 
 </section>
