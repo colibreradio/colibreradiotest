@@ -153,13 +153,14 @@ nav .nav-cols {
 }
 
 .section-up {
-  width: 600px;
+  width: 400px;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: center;
   padding: 9em 0 0 2em;
+  text-align: center;
 }
 
 .section-main {
@@ -232,13 +233,13 @@ nav .nav-cols {
   }
   
   .section-up {
-    width: 300px;
+    width: 100%;
     height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 9em 0 0 2em;
+    padding: 9em 2em 0 2em;
     text-align: center;
   }
 
@@ -337,8 +338,8 @@ nav .nav-cols {
   padding: 0;
   background: linear-gradient(
       to bottom,
-      rgba(156, 155, 154, 0.7) 0%,
-      rgba(156, 155, 154, 0.7) 100%
+      rgba(185, 155, 154, 0.7) 0%,
+      rgba(185, 155, 154, 0.7) 100%
     ),
     url("../assets/img/logo4.jpg") no-repeat center/cover;
   width: 100%;
