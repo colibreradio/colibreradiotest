@@ -153,8 +153,17 @@ nav .nav-cols {
   display: none;
 }
 
+.section-up {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 9em 0 0 2em;
+}
+
 .section-main {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
