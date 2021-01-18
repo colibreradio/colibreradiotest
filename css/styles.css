@@ -42,16 +42,29 @@ img {
   width: 100%;
 }
 
+
 a {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  letter-spacing: 1px;
   text-decoration: none;
+  border-bottom: 1pz solid transparent;
+  padding: 0.1em 0.1em;
+  transition: border-bottom 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+    color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+h1,
+h3 {
   color: var(--light-color);
 }
 
-h1, h3 {
-  color: var(--light-color);
-}
-
-#chat > div >  h3 {
+#chat > div > h3 {
   padding: 1em;
 }
 
@@ -84,7 +97,7 @@ nav {
 nav .nav-cols {
   display: grid;
   grid-gap: 1px;
-  grid-template-columns: .6fr 4fr 1fr;
+  grid-template-columns: 0.6fr 4fr 1fr;
   padding-left: 2rem;
   padding-right: 2rem;
   align-items: center;
@@ -107,18 +120,21 @@ nav .nav-cols {
   list-style: none;
 }
 
-.nav-links a {
+/* .nav-links a {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 1.5em;
   letter-spacing: 1px;
-}
+} */
 
 .player {
   display: flex;
   justify-content: flex-end;
   margin-top: 1em;
   margin-bottom: 1em;
+  background-color: var(--secondary-color);
+  padding: 0.7em;
+  border-radius: 25px;
 }
 
 .burger {
@@ -187,7 +203,6 @@ nav .nav-cols {
   .nav-links li {
     opacity: 0;
   }
- 
 
   .burger {
     display: inline;
@@ -200,16 +215,18 @@ nav .nav-cols {
 
   .playermain {
     display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 0.5em;
+    border-radius: 15px;
   }
 
   .section-main {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
-
 }
 
 .nav-active {
@@ -290,7 +307,6 @@ nav .nav-cols {
   font-size: 2.5rem;
 }
 
-
 /* Showcase */
 
 #showcase {
@@ -321,9 +337,9 @@ footer {
   color: var(--primary-color);
   margin: 0;
   padding: 2em;
-  font-size: .8em;
+  font-size: 0.8em;
 }
- 
+
 .footer-flex {
   display: flex;
   flex-direction: row;
@@ -334,12 +350,10 @@ footer {
   margin: 0 5px;
 }
 
-
 @media screen and (max-width: 780px) {
   .card {
     grid-template-columns: 1fr !important;
   }
-
 }
 
 /* Utility Classes*/
@@ -355,7 +369,7 @@ footer {
   max-width: 1180px;
   text-align: center;
   margin: 0 auto;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 .primarycolor {
@@ -381,7 +395,6 @@ footer {
 .float-right {
   float: right;
 }
-
 
 /* Back to top button*/
 .back-to-top {
