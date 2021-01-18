@@ -44,8 +44,9 @@ img {
 
 
 a {
+  font-family: "Open Sans",sans-serif;
   color: var(--primary-color);
-  font-size: 1.5em;
+  font-size: 1.1em;
   letter-spacing: 1px;
   text-decoration: none;
   border-bottom: 1pz solid transparent;
@@ -91,7 +92,7 @@ nav {
 
 .logo {
   color: var(--primary-color);
-  font-size: 22px;
+  font-size: 1.3em;
 }
 
 nav .nav-cols {
@@ -101,7 +102,6 @@ nav .nav-cols {
   padding-left: 2rem;
   padding-right: 2rem;
   align-items: center;
-  font-size: 14px;
   width: 100%;
 }
 
