@@ -587,3 +587,8 @@ textarea:focus {
 .mt-1 {
   margin-top: 1em;
 }
+
+.fontopen {
+  font-family: "Open Sans", sans-serif;
+}
+
