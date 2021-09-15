@@ -2,12 +2,12 @@
 
 <body id="page-top">
 
-    {% include nav.html %}
+    {% include navnoplayer.html %}
 
-    <section id="showcase" class="section">
-        <div class="container" style="margin-top: 3em;">
+    <section id="post" class="section">
+        <div class="postcontainer" style="margin-top: 5em;">
 
-            <h2>{{ page.title }}</h2><br>
+            <h2 class="thirdcolor">{{ page.title }}</h2><br>
             <p>{{ page.date | date: "%-d %B %Y %R" }}</p>
             <br>
             <a href="{{ page.author }}" class="inactiveLink">{{ page.author }}</a>

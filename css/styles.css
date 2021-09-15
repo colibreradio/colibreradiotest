@@ -14,10 +14,11 @@
 :root {
   --primary-color: #231f20;
   --primary-color-hover: #f4f4f4;
-  --secondary-color: #c53025;
+  --secondary-color: #D2042D;
   --secondary-color-hover: #f4f4f4;
   --light-color: #fff;
-  --footer-color: #e6e3e3;
+  --footer-color: #f2f2f2;
+  --third-color: #8c206b;
 }
 
 * {
@@ -31,7 +32,7 @@ html {
 }
 
 body {
-  font-family: "Fira Mono", "Roboto", sans-serif;
+  font-family: "Comfortaa", "Roboto", sans-serif;
   background-color: white;
   color: var(--primary-color);
   line-height: 1.6;
@@ -66,6 +67,7 @@ a:hover {
 h1,
 h3 {
   color: var(--light-color);
+  font-family: "Fira Mono", "Roboto", sans-serif;
 }
 
  h3 {
@@ -343,10 +345,10 @@ nav .nav-cols {
   padding: 0;
   background: linear-gradient(
       to bottom,
-      rgba(185, 155, 154, 0.7) 0%,
-      rgba(185, 155, 154, 0.7) 100%
+      rgba(165, 164, 164, 0.7) 0%,
+      rgba(165, 164, 164, 0.7) 100%
     ),
-    url("../assets/img/colibri.jpg") no-repeat center/cover;
+    url("../assets/img/colibri.png") no-repeat center/cover;
   width: 100%;
   height: 100vh;
 }
@@ -358,6 +360,28 @@ nav .nav-cols {
 
 #showcase h2 {
   font-size: 2rem;
+}
+
+
+#post {
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(
+      to bottom,
+      rgba(165, 164, 164, 0.7) 0%,
+      rgba(165, 164, 164, 0.7) 100%
+    ),
+    url("../assets/img/colibri.png") repeat; */
+  width: 100%;
+  /* min-height: 100vh; */
+}
+
+.postcontainer {
+  max-width: 1000px;
+  text-align: center;
+  margin: 5em auto;
+  padding: 3rem;
+  background-color: white;
 }
 
 /* Footer */
@@ -403,6 +427,10 @@ footer {
 
 .primarycolor {
   color: var(--primary-color);
+}
+
+.thirdcolor {
+  color: var(--third-color);
 }
 
 .bg-light {
