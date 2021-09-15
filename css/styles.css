@@ -592,3 +592,37 @@ textarea:focus {
   font-family: "Open Sans", sans-serif;
 }
 
+.flextiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tile {
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.tileup {
+  flex: 1;
+}
+
+.tiledown {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+}
+
+.tiledown > a {
+  align-self: flex-end;
+}
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}

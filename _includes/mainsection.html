@@ -32,6 +32,38 @@
             style="border:0;width:90%;height:500px;" allowTransparency="true"></iframe>
     </div>
 </section>
+<!-- posts Section -->
+<section id="posts" class="section">
+    <div class="container2">
+
+        <div class="flextiles">
+
+            {% for post in site.posts %}
+            {% assign count = count | plus:1 %}
+
+            <div class="tile">
+                <div class="tileup">
+                    <h2>{{ post.title }}</h2>
+
+                    <img class="img-fluid" src="{{post.thumbnail}}" style="margin: 1em 0;" />
+
+                    <p>{{ post.excerpt }}</p>
+                </div>
+
+                <div class="tiledown">
+                    <a href="{{ post.url }}" >Read More..</a>
+                </div>
+            </div>
+
+            <!-- {% if count == 3 %}{% break %}
+            {% endif %} -->
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
 <!-- Contact Section -->
 <section id="contact" class="section">
     <div class="container">
