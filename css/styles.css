@@ -628,7 +628,7 @@ textarea:focus {
 }
 
 .tile {
-  border: 1px solid black;
+  border: 2px solid var(--third-color);
   padding: 1em;
   margin: 1em;
   display: flex;
@@ -641,6 +641,7 @@ textarea:focus {
 }
 
 .tiledown {
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   flex: none;
