@@ -84,6 +84,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0 !important;
+  z-index: 1;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
