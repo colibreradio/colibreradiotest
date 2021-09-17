@@ -98,6 +98,7 @@ nav {
 .logo {
   color: var(--primary-color);
   font-size: 1.3em;
+  font-weight: bold;
 }
 
 nav .nav-cols {
